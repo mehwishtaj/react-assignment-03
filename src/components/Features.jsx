@@ -3,23 +3,16 @@ import { DollarSign, BookOpen, MessageCircle, Settings } from "lucide-react";
 
 import girl from "../assets/home-feature.webp";
 
-
 const Features = () => {
   return (
     <section className="bg-gray-100 py-20 px-6">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
-
         {/* ===== LEFT SIDE IMAGE ===== */}
         <div className="relative flex-1 flex justify-center">
-
           {/* Background Shape */}
           <div className="absolute w-[420px] h-[420px] bg-orange-200 rounded-[40%] -z-10"></div>
 
-          <img
-            src={girl}
-            alt="student"
-            className="w-[380px] relative z-10"
-          />
+          <img src={girl} alt="student" className="w-[380px] relative z-10" />
 
           {/* Top Card */}
           <div className="absolute top-10 right-0 bg-white p-6 rounded-xl shadow-lg ">
@@ -62,12 +55,10 @@ const Features = () => {
               </div>
             </div>
           </div>
-
         </div>
 
         {/* ===== RIGHT SIDE CONTENT ===== */}
         <div className="flex-1">
-
           <h2 className="text-4xl md:text-5xl font-bold leading-tight text-gray-900">
             Make your{" "}
             <span className="text-teal-700 relative inline-block">
@@ -78,36 +69,24 @@ const Features = () => {
           </h2>
 
           <p className="mt-6 text-gray-600 max-w-xl">
-            Set the way of learning according to your wishes with some of
-            the benefits that you get us, so you on enjoy the lessons that
-            we provide.
+            Set the way of learning according to your wishes with some of the
+            benefits that you get us, so you on enjoy the lessons that we
+            provide.
           </p>
 
           {/* Features Grid */}
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 rounded-full">
+            <Feature icon={<Settings />} title="Easy Accessable" />
 
-            <Feature
-              icon={<Settings />}
-              title="Easy Accessable"
-            />
+            <Feature icon={<DollarSign />} title="More Affordable Cost" />
 
-            <Feature
-              icon={<DollarSign />}
-              title="More Affordable Cost"
-            />
-
-            <Feature
-              icon={<BookOpen />}
-              title="Flexible Study Time"
-            />
+            <Feature icon={<BookOpen />} title="Flexible Study Time" />
 
             <Feature
               icon={<MessageCircle />}
               title="Consultation With Mentor"
             />
-
           </div>
-
         </div>
       </div>
     </section>
@@ -122,7 +101,8 @@ const Feature = ({ icon, title }) => (
     <div>
       <h4 className="font-semibold text-yellow-400">{title}</h4>
       <p className="text-sm text-gray-600 mt-2">
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore
       </p>
     </div>
   </div>
