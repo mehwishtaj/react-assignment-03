@@ -103,7 +103,7 @@ const Hero = () => {
         <div className="flex-1 mt-10 lg:mt-0 left-10 flex justify-center relative">
 
           <img
-            src="public/home-hero11-removebg-preview.png"
+            src="src/assets/home-hero11-removebg-preview.png"
             alt="student"
              className="w-80 md:w-[420px] lg:w-[500px]  "
           />
